@@ -17,10 +17,10 @@ public class UserResource {
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<User>> findAll() {
-		User maria = new User("1", "Felipe Batutinha", "felipe@gmail.com");
+		User felipe = new User("1", "Felipe Batutinha", "felipe@gmail.com");
 		User alex = new User("2", "Alex Green", "alex@gmail.com");
 		List<User> list = new ArrayList<>();
-		list.addAll(Arrays.asList(maria, alex));
+		list.addAll(Arrays.asList(felipe, alex));
 		return ResponseEntity.ok().body(list);
 	}
 }
